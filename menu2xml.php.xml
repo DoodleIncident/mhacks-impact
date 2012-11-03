@@ -290,4 +290,7 @@ Dinner: 5:00pm-8:00pm<br /><br />--></hours>
 			</station>
 		</meal>
 	</menu>
+	<error>
+		<message>Requested date "todayScheme" could not be understood. Current date used.</message>
+	</error>
 </dininghall>
