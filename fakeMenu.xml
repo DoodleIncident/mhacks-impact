@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <hall location='Bursley' id="0">
+  <session time="Lunch">
+   <food>Chicken</food>
+   <food>Cheese</food>
+  </session>
+ </hall>
+ <hall location='Mojo' id="1">
+  <session time="Dinner">
+   <food>Pizza</food>
+   <food>Also Pizza</food>
+  </session>
+ </hall>

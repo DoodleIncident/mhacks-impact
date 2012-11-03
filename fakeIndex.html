@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<script type="text/javascript" src="jquery.mobile-1.2.0.min.js"></script>
+	<title>Reading XML with jQuery</title>
+		<script>
+			$(document).ready(function(){
+				$.ajax({
+					type: "GET",
+					url: "fakeMenu.xml",
+					dataType: "xml",
+					success: 	function(xml) {
+						$(xml).find('hall').each(function(){
+							var location = $(this).attr('location');
+							var id = $(this).attr('id');
+							$('<div class="items" id="link_'+id+'"></div>').html('<p>'+location+'</p>').appendTo('#page-wrap');
+							$(this).find('session').each(function(){
+								var time = $(this).attr('time');
+								$('<div class="brief"></div>').html(time).appendTo('#link_'+location);
+							});
+						});
+					}
+				});
+			});
+		</script>
+</head>
+<body>
+	<div id="page-wrap">
+		<h1>Reading XML with jQuery</h1>
+	</div>
+</body>
+</html>
+
+
+</body>
+</html>
