@@ -13,10 +13,44 @@ import android.util.Xml;
 public class DiningHallXmlParser {
 	// We don't use namespaces
     private static final String ns = null;
+	private ArrayList<Menu> menus;
+	private ArrayList<Meal> meals;
+	private ArrayList<Station> stations;
+	private ArrayList<Course> courses;
+	private ArrayList<MenuItem> items;
+	private String iron;
+	private String calcium;
+	private String vitaminC;
+	private String vitaminA;
+	private String protein;
+	private String sugars;
+	private String dietaryFiber;
+	private String totalCarbohydrate;
+	private String sodium;
+	private String cholesterol;
+	private Nutrition nutrition;
+	private String calories;
+	private String caloriesFromFat;
+	private String totalFat;
+	private String saturatedFat;
+	private String transFat;
+	private String portion;
+	private String serving;
+	private String portionTitle;
+	private String servingTitle;
+	private String hallName;
+	private String hours;
+	private String address;
+	private String contacts;
+	private String name;
+	private String mealName;
+	private String stationName;
+	private String courseName;
+	private XmlPullParser parser;
    
     public DiningHall parse(InputStream in) throws XmlPullParserException, IOException {
         try {
-            XmlPullParser parser = Xml.newPullParser();
+            parser = Xml.newPullParser();
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(in, null);
             parser.nextTag();
@@ -27,18 +61,18 @@ public class DiningHallXmlParser {
     }
     
     private DiningHall readHall(XmlPullParser parser) throws XmlPullParserException, IOException {
-        ArrayList<Menu> menus = new ArrayList<Menu>();
-        String hallName = null;
-        String hours = null;
-        String address = null;
-        String contacts = null;
+        menus = new ArrayList<Menu>();
+        hallName = null;
+        hours = null;
+        address = null;
+        contacts = null;
 
         parser.require(XmlPullParser.START_TAG, ns, "dininghall");
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
-            String name = parser.getName();
+            name = parser.getName();
             if (name.equals("name")) {
                 hallName = readHallName(parser);
             } else if (name.equals("menu")) {
@@ -58,41 +92,41 @@ public class DiningHallXmlParser {
     
     private String readHallName(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "name");
-        String hallName = readText(parser);
+        hallName = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "name");
         return hallName;
     }
     
     private String readHours(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "hours");
-        String hours = readText(parser);
+        hours = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "hours");
         return hours;
     }
     
     private String readAddress(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "address");
-        String address = readText(parser);
+        address = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "address");
         return address;
     }
     
     private String readContacts(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "contacts");
-        String contacts = readText(parser);
+        contacts = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "contacts");
         return contacts;
     }
     
     private Menu readMenu(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "menu");
-        ArrayList<Meal> meals = new ArrayList<Meal>();
+        meals = new ArrayList<Meal>();
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
-            String name = parser.getName();
-            if (name.equals("title")) {
+            name = parser.getName();
+            if (name.equals("meal")) {
                 meals.add(readMeal(parser));
             } else {
                 skip(parser);
@@ -103,14 +137,14 @@ public class DiningHallXmlParser {
     
     private Meal readMeal(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "meal");
-        String mealName = null;
-        ArrayList<Station> stations = new ArrayList<Station>();
+        mealName = null;
+        stations = new ArrayList<Station>();
         
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
-            String name = parser.getName();
+            name = parser.getName();
             if (name.equals("name")) {
                 mealName = readMealName(parser);
             } else if (name.equals("station")) {
@@ -124,15 +158,15 @@ public class DiningHallXmlParser {
     
     private String readMealName(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "name");
-        String name = readText(parser);
+        mealName = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "name");
-        return name;
+        return mealName;
     }
     
     private Station readStation(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "station");
-        String stationName = null;
-        ArrayList<Course> courses = new ArrayList<Course>();
+        stationName = null;
+        courses = new ArrayList<Course>();
         
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -153,15 +187,15 @@ public class DiningHallXmlParser {
     
     private String readStationName(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "name");
-        String name = readText(parser);
+        name = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "name");
         return name;
     }
     
     private Course readCourse(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "course");
-        String courseName = null;
-        ArrayList<MenuItem> items = new ArrayList<MenuItem>();
+        courseName = null;
+        items = new ArrayList<MenuItem>();
         
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -189,9 +223,9 @@ public class DiningHallXmlParser {
     
     private MenuItem readMenuItem(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "menuitem");
-        String serving = null;
-        String portion = null;
-        Nutrition nutrition = null;
+        serving = null;
+        portion = null;
+        nutrition = null;
         String itemName = readText(parser);
         boolean vegan = parser.getAttributeValue(null, "vegan") == "1";
         boolean vegetarian = parser.getAttributeValue(null, "vegetarian") == "1";
@@ -218,38 +252,38 @@ public class DiningHallXmlParser {
     
     private String readServingSize(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "serving_size");
-        String title = readText(parser);
+        servingTitle = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "serving_size");
-        return title;
+        return servingTitle;
     }
     
     private String readPortionSize(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "portion_size");
-        String title = readText(parser);
+        portionTitle = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "portion_size");
-        return title;
+        return portionTitle;
     }
     
     private Nutrition readNutrition(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "nutrition");
-        String serving = null;
-        String portion = null;
-        Nutrition nutrition = null;
-        String calories = parser.getAttributeValue(null, "cl");
-    	String caloriesFromFat = parser.getAttributeValue(null, "fc");
-    	String totalFat = parser.getAttributeValue(null, "f");
-    	String saturatedFat = parser.getAttributeValue(null, "fs");
-    	String transFat = parser.getAttributeValue(null, "ft");
-    	String cholesterol = parser.getAttributeValue(null, "ch");
-    	String sodium = parser.getAttributeValue(null, "so");
-    	String totalCarbohydrate = parser.getAttributeValue(null, "cr");
-    	String dietaryFiber = parser.getAttributeValue(null, "fi");
-    	String sugars = parser.getAttributeValue(null, "sugar");
-    	String protein = parser.getAttributeValue(null, "p");
-    	String vitaminA = parser.getAttributeValue(null, "vita");
-    	String vitaminC = parser.getAttributeValue(null, "vitc");
-    	String calcium = parser.getAttributeValue(null, "12");
-    	String iron = parser.getAttributeValue(null, "fe");
+        serving = null;
+        portion = null;
+        nutrition = null;
+        calories = parser.getAttributeValue(null, "cl");
+    	caloriesFromFat = parser.getAttributeValue(null, "fc");
+    	totalFat = parser.getAttributeValue(null, "f");
+    	saturatedFat = parser.getAttributeValue(null, "fs");
+    	transFat = parser.getAttributeValue(null, "ft");
+    	cholesterol = parser.getAttributeValue(null, "ch");
+    	sodium = parser.getAttributeValue(null, "so");
+    	totalCarbohydrate = parser.getAttributeValue(null, "cr");
+    	dietaryFiber = parser.getAttributeValue(null, "fi");
+    	sugars = parser.getAttributeValue(null, "sugar");
+    	protein = parser.getAttributeValue(null, "p");
+    	vitaminA = parser.getAttributeValue(null, "vita");
+    	vitaminC = parser.getAttributeValue(null, "vitc");
+    	calcium = parser.getAttributeValue(null, "12");
+    	iron = parser.getAttributeValue(null, "fe");
     	
         return new Nutrition(calories,
     	caloriesFromFat,

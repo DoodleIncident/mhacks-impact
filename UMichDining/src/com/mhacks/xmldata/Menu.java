@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Menu 
 {
-	ArrayList<Meal> availableMeals;
+	public ArrayList<Meal> availableMeals;
 	
 	public Menu(ArrayList<Meal> availibleMeals) {
 		this.availableMeals = availibleMeals;

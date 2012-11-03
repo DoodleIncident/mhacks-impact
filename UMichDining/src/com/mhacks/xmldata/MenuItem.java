@@ -4,16 +4,16 @@ import org.xmlpull.v1.XmlPullParser;
 
 public class MenuItem 
 {
-	String name;
+	public String name;
 	
-	String servingSize;
-	int portionSize; //size in grams
+	public String servingSize;
+	public int portionSize; //size in grams
 	
 	//boolean flags
-	boolean vegan;
-	boolean vegetarian;
-	boolean msmart;
-	boolean glutenfree;
+	public boolean vegan;
+	public boolean vegetarian;
+	public boolean msmart;
+	public boolean glutenfree;
 	
 	public MenuItem(String name, boolean vegan, boolean vegetarian, boolean msmart, boolean glutenfree, String serving, String portion, Nutrition nutrition) {
 		this.name = name;
