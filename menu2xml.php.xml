@@ -1,0 +1,293 @@
+<dininghall>
+	<name>West Quad Dining Hall</name>
+	<hours><!--Fall 2012 Hours<br />
+Monday-Friday: <br />
+Lunch: 11:00am-2:00pm<br />
+Dinner: 5:00pm-8:00pm<br /><br />--></hours>
+	<address><!--541 Thompson<br /> Ann Arbor, MI 48109--></address>
+	<contact><!--734.764.1111<br /><a href="mailto:hsg-ds-westquad@umich.edu">hsg-ds-westquad@umich.edu</a>--></contact>
+	<menu>
+		<date>Friday, November 2</date>
+		<meal>
+			<name>BREAKFAST</name>
+			<station>
+				<course>
+					<name>notice</name>
+					<menuitem>West Quad Dining Hall is not serving breakfast on this date.</menuitem>
+				</course>
+			</station>
+		</meal>
+		<meal>
+			<name>LUNCH</name>
+			<station>
+				<name>Thompson Street Deli</name>
+				<course>
+					<name>Soups</name>
+					<menuitem>New England Clam Chowder
+							<serving_size portion='Cups'></serving_size>
+							<portion_size grams='261'></portion_size>
+							<nutrition p="19 gm" f="12 gm" fc="108" cr="30 gm" cl="308 " so="777 mg" ch="34 mg" fs="3 gm" fi="2 gm" su="9 gm" ft="2 gm" pro="25" fat="18" cho="11" sfa="15" tdfb="6" vitc="10" ca="21" fe="12" vtaiu="13" chol="11" fatrn="10" sugar="17" na="52"></nutrition></menuitem>
+					<menuitem vegan="1">Lentil Soup 
+							<serving_size portion='Cups'></serving_size>
+							<portion_size grams='247'></portion_size>
+							<nutrition p="7 gm" f="6 gm" fc="51" cr="21 gm" cl="160 " so="657 mg" ch="0 mg" fs="1 gm" fi="3 gm" su="1 gm" ft="0 gm" pro="9" fat="9" cho="8" sfa="4" tdfb="13" vitc="3" ca="2" fe="12" vtaiu="23" chol="0" fatrn="0" sugar="2" na="44"></nutrition></menuitem>
+				</course>
+				<course>
+					<name>DeliSpecials</name>
+					<menuitem>STUDENT CHOICE SANDWICH 
+							<serving_size portion='TITLE'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>The Main Event</name>
+				<course>
+					<name>Entree1</name>
+					<menuitem>Philly Cheese Steak on Club Roll
+							<serving_size portion='Sandwich'></serving_size>
+							<portion_size grams='213'></portion_size>
+							<nutrition p="28 gm" f="10 gm" fc="87" cr="46 gm" cl="391 " so="1046 mg" ch="65 mg" fs="3 gm" fi="1 gm" su="3 gm" ft="1 gm" pro="37" fat="15" cho="17" sfa="12" tdfb="4" vitc="8" ca="12" fe="14" vtaiu="0" chol="22" fatrn="6" sugar="5" na="70"></nutrition></menuitem>
+					<menuitem>Turkey Stew
+							<serving_size portion='Cups'></serving_size>
+							<portion_size grams='227'></portion_size>
+							<nutrition p="17 gm" f="12 gm" fc="103" cr="15 gm" cl="234 " so="1862 mg" ch="27 mg" fs="2 gm" fi="2 gm" su="3 gm" ft="2 gm" pro="23" fat="17" cho="5" sfa="9" tdfb="8" vitc="6" ca="3" fe="7" vtaiu="90" chol="9" fatrn="11" sugar="6" na="124"></nutrition></menuitem>
+					<menuitem vegetarian="1">Grilled Vegetable Pita 
+							<serving_size portion='1/2 Pita'></serving_size>
+							<portion_size grams='196'></portion_size>
+							<nutrition p="15 gm" f="17 gm" fc="150" cr="40 gm" cl="368 " so="564 mg" ch="27 mg" fs="7 gm" fi="4 gm" su="5 gm" ft="1 gm" pro="20" fat="25" cho="15" sfa="30" tdfb="16" vitc="34" ca="34" fe="11" vtaiu="13" chol="9" fatrn="4" sugar="10" na="38"></nutrition></menuitem>
+				</course>
+				<course>
+					<name>Starches1</name>
+					<menuitem glutenfree="1" vegan="1">Kettle Potato Chips 
+							<serving_size portion='1 oz Serving'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition p="2 gm" f="9 gm" fc="82" cr="16 gm" cl="152 " so="106 mg" ch="0 mg" fs="1 gm" fi="1 gm" su="0 gm" ft="0 gm" pro="3" fat="14" cho="6" sfa="5" tdfb="5" vitc="15" ca="0" fe="2" vtaiu="0" chol="0" fatrn="0" sugar="0" na="7"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>The Olive Branch</name>
+				<course>
+					<name>MiddleEasternBar</name>
+					<menuitem glutenfree="1" halal="1">Chicken Shawarma 
+							<serving_size portion='Ounce'></serving_size>
+							<portion_size grams='78'></portion_size>
+							<nutrition p="14 gm" f="14 gm" fc="127" cr="1 gm" cl="194 " so="196 mg" ch="71 mg" fs="4 gm" fi="0 gm" su="0 gm" ft="0 gm" pro="19" fat="21" cho="0" sfa="17" tdfb="0" vitc="4" ca="3" fe="5" vtaiu="2" chol="23" fatrn="0" sugar="1" na="13"></nutrition></menuitem>
+					<menuitem glutenfree="1" halal="1">Lamb Gyro
+							<serving_size portion='3 oz Serving'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="14 gm" f="7 gm" fc="62" cr="6 gm" cl="142 " so="364 mg" ch="0 mg" fs="2 gm" fi="1 gm" su="2 gm" ft="0 gm" pro="18" fat="10" cho="2" sfa="10" tdfb="4" vitc="5" ca="3" fe="8" vtaiu="0" chol="0" fatrn="0" sugar="5" na="24"></nutrition></menuitem>
+					<menuitem glutenfree="1" halal="1">Beef Kofta
+							<serving_size portion='3 oz Serving'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="10 gm" f="11 gm" fc="101" cr="2 gm" cl="151 " so="302 mg" ch="39 mg" fs="5 gm" fi="1 gm" su="1 gm" ft="1 gm" pro="13" fat="17" cho="1" sfa="20" tdfb="2" vitc="7" ca="2" fe="7" vtaiu="11" chol="13" fatrn="3" sugar="1" na="20"></nutrition></menuitem>
+					<menuitem vegan="1">Falafel Sandwich  
+							<serving_size portion='Sandwich'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="6 gm" f="9 gm" fc="80" cr="22 gm" cl="185 " so="438 mg" ch="0 mg" fs="1 gm" fi="5 gm" su="0 gm" ft="0 gm" pro="8" fat="13" cho="8" sfa="6" tdfb="19" vitc="5" ca="10" fe="15" vtaiu="8" chol="0" fatrn="0" sugar="0" na="29"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>Salsa</name>
+				<course>
+					<name>Entree4</name>
+					<menuitem glutenfree="1">Zesty Nachos
+							<serving_size portion='Serving'></serving_size>
+							<portion_size grams='272'></portion_size>
+							<nutrition p="32 gm" f="48 gm" fc="435" cr="41 gm" cl="732 " so="1427 mg" ch="107 mg" fs="20 gm" fi="3 gm" su="5 gm" ft="3 gm" pro="43" fat="73" cho="15" sfa="93" tdfb="13" vitc="8" ca="59" fe="19" vtaiu="21" chol="36" fatrn="13" sugar="9" na="95"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name></name>
+				<course>
+					<name>Salads</name>
+					<menuitem glutenfree="1" vegetarian="1">Redskin Potato Salad 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="2 gm" f="6 gm" fc="58" cr="20 gm" cl="145 " so="432 mg" ch="5 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="3" fat="10" cho="7" sfa="4" tdfb="6" vitc="21" ca="2" fe="4" vtaiu="3" chol="2" fatrn="0" sugar="5" na="29"></nutrition></menuitem>
+					<menuitem msmart="1">Panzanella Salad w/ Bacon
+							<serving_size portion='Salad'></serving_size>
+							<portion_size grams='233'></portion_size>
+							<nutrition p="4 gm" f="9 gm" fc="81" cr="17 gm" cl="164 " so="159 mg" ch="3 mg" fs="1 gm" fi="2 gm" su="5 gm" ft="0 gm" pro="5" fat="14" cho="6" sfa="6" tdfb="10" vitc="27" ca="6" fe="2" vtaiu="35" chol="1" fatrn="0" sugar="10" na="11"></nutrition></menuitem>
+				</course>
+				<course>
+					<name>WorldHarvestTitle</name>
+					<menuitem>INDIAN
+							<serving_size portion='TITLE'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition></nutrition></menuitem>
+				</course>
+				<course>
+					<name>WorldHarvest</name>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Pea Pods 
+							<serving_size portion='1/4 Cup'></serving_size>
+							<portion_size grams='57'></portion_size>
+							<nutrition p="2 gm" f="0 gm" fc="1" cr="4 gm" cl="23 " so="2 mg" ch="0 mg" fs="0 gm" fi="1 gm" su="2 gm" pro="2" fat="0" cho="2" sfa="0" tdfb="6" vitc="56" ca="2" fe="6" vtaiu="12" chol="0" fatrn="" sugar="4" na="0"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Cauliflower 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="2 gm" f="1 gm" fc="4" cr="4 gm" cl="25 " so="16 mg" ch="0 mg" fs="0 gm" fi="3 gm" su="2 gm" pro="3" fat="1" cho="2" sfa="0" tdfb="10" vitc="79" ca="2" fe="2" vtaiu="0" chol="0" fatrn="" sugar="4" na="1"></nutrition></menuitem>
+					<menuitem vegetarian="1" msmart="1">Vegetable Cashew Koorma 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="3 gm" f="5 gm" fc="45" cr="11 gm" cl="97 " so="349 mg" ch="0 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="4" fat="8" cho="4" sfa="3" tdfb="9" vitc="17" ca="5" fe="5" vtaiu="53" chol="0" fatrn="0" sugar="7" na="23"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Basmati Rice 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="4 gm" f="0 gm" fc="0" cr="34 gm" cl="156 " so="42 mg" ch="0 mg" fs="0 gm" fi="0 gm" su="0 gm" ft="0 gm" pro="5" fat="0" cho="12" sfa="0" tdfb="0" vitc="0" ca="0" fe="0" vtaiu="0" chol="0" fatrn="0" sugar="0" na="3"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegetarian="1" msmart="1">Egg Curry 
+							<serving_size portion='5 oz Piece'></serving_size>
+							<portion_size grams='128'></portion_size>
+							<nutrition p="6 gm" f="5 gm" fc="43" cr="8 gm" cl="96 " so="369 mg" ch="175 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="9" fat="7" cho="3" sfa="6" tdfb="7" vitc="12" ca="3" fe="8" vtaiu="17" chol="58" fatrn="0" sugar="6" na="25"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>Dessert</name>
+				<course>
+					<name>Desserts</name>
+					<menuitem vegetarian="1">Chocolate Chip Cookies 
+							<serving_size portion='Cookie'></serving_size>
+							<portion_size grams='38'></portion_size>
+							<nutrition p="2 gm" f="7 gm" fc="63" cr="24 gm" cl="169 " so="115 mg" ch="7 mg" fs="4 gm" fi="1 gm" su="12 gm" ft="0 gm" pro="3" fat="11" cho="9" sfa="18" tdfb="4" vitc="0" ca="12" fe="6" vtaiu="4" chol="2" fatrn="0" sugar="24" na="8"></nutrition></menuitem>
+					<menuitem vegetarian="1">Peanut Butter Cookies 
+							<serving_size portion='Cookie'></serving_size>
+							<portion_size grams='38'></portion_size>
+							<nutrition p="3 gm" f="9 gm" fc="83" cr="20 gm" cl="172 " so="165 mg" ch="10 mg" fs="3 gm" fi="1 gm" su="12 gm" ft="0 gm" pro="4" fat="14" cho="7" sfa="15" tdfb="3" vitc="0" ca="1" fe="4" vtaiu="4" chol="3" fatrn="0" sugar="24" na="11"></nutrition></menuitem>
+					<menuitem msmart="1">M &amp; M Rice Krispies Treats
+							<serving_size portion='Bar'></serving_size>
+							<portion_size grams='37'></portion_size>
+							<nutrition p="1 gm" f="6 gm" fc="51" cr="24 gm" cl="148 " so="113 mg" ch="1 mg" fs="2 gm" fi="0 gm" su="13 gm" ft="1 gm" pro="2" fat="9" cho="9" sfa="7" tdfb="1" vitc="8" ca="1" fe="19" vtaiu="10" chol="0" fatrn="5" sugar="25" na="8"></nutrition></menuitem>
+				</course>
+			</station>
+		</meal>
+		<meal>
+			<name>DINNER</name>
+			<station>
+				<name>Thompson Street Deli</name>
+				<course>
+					<name>Soups</name>
+					<menuitem>New England Clam Chowder
+							<serving_size portion='Cups'></serving_size>
+							<portion_size grams='261'></portion_size>
+							<nutrition p="19 gm" f="12 gm" fc="108" cr="30 gm" cl="308 " so="777 mg" ch="34 mg" fs="3 gm" fi="2 gm" su="9 gm" ft="2 gm" pro="25" fat="18" cho="11" sfa="15" tdfb="6" vitc="10" ca="21" fe="12" vtaiu="13" chol="11" fatrn="10" sugar="17" na="52"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegan="1">Southwestern Bean Soup 
+							<serving_size portion='Cups'></serving_size>
+							<portion_size grams='261'></portion_size>
+							<nutrition p="2 gm" f="8 gm" fc="67" cr="8 gm" cl="104 " so="239 mg" ch="0 mg" fs="1 gm" fi="2 gm" su="2 gm" ft="0 gm" pro="2" fat="11" cho="3" sfa="5" tdfb="9" vitc="29" ca="2" fe="3" vtaiu="41" chol="0" fatrn="0" sugar="4" na="16"></nutrition></menuitem>
+				</course>
+				<course>
+					<name>DeliSpecials</name>
+					<menuitem>STUDENT CHOICE SANDWICH 
+							<serving_size portion='TITLE'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>The Main Event</name>
+				<course>
+					<name>Entree1</name>
+					<menuitem>Stromboli w/ Cheese &amp; Pepperoni
+							<serving_size portion='Slice'></serving_size>
+							<portion_size grams='81'></portion_size>
+							<nutrition p="12 gm" f="11 gm" fc="95" cr="24 gm" cl="238 " so="504 mg" ch="28 mg" fs="5 gm" fi="1 gm" su="1 gm" ft="0 gm" pro="16" fat="16" cho="9" sfa="22" tdfb="4" vitc="2" ca="19" fe="8" vtaiu="4" chol="9" fatrn="0" sugar="2" na="34"></nutrition></menuitem>
+					<menuitem vegetarian="1">Stromboli w/ Spinach &amp; Peppers 
+							<serving_size portion='Slice'></serving_size>
+							<portion_size grams='90'></portion_size>
+							<nutrition p="11 gm" f="9 gm" fc="84" cr="24 gm" cl="225 " so="443 mg" ch="23 mg" fs="4 gm" fi="1 gm" su="1 gm" ft="0 gm" pro="15" fat="14" cho="9" sfa="19" tdfb="4" vitc="12" ca="20" fe="9" vtaiu="17" chol="8" fatrn="0" sugar="3" na="30"></nutrition></menuitem>
+					<menuitem glutenfree="1" msmart="1">Herb Grilled Chicken Breast 
+							<serving_size portion='4 oz Piece'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition></nutrition></menuitem>
+				</course>
+				<course>
+					<name>Starches1</name>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Yukon Gold Potatoes 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="5 gm" f="0 gm" fc="0" cr="27 gm" cl="103 " so="0 mg" ch="0 mg" fs="0 gm" fi="3 gm" su="3 gm" ft="0 gm" pro="6" fat="0" cho="10" sfa="0" tdfb="12" vitc="45" ca="2" fe="8" vtaiu="0" chol="0" fatrn="0" sugar="6" na="0"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>The Olive Branch</name>
+				<course>
+					<name>MiddleEasternBar</name>
+					<menuitem glutenfree="1" halal="1">Chicken Shawarma 
+							<serving_size portion='Ounce'></serving_size>
+							<portion_size grams='78'></portion_size>
+							<nutrition p="14 gm" f="14 gm" fc="127" cr="1 gm" cl="194 " so="196 mg" ch="71 mg" fs="4 gm" fi="0 gm" su="0 gm" ft="0 gm" pro="19" fat="21" cho="0" sfa="17" tdfb="0" vitc="4" ca="3" fe="5" vtaiu="2" chol="23" fatrn="0" sugar="1" na="13"></nutrition></menuitem>
+					<menuitem glutenfree="1" halal="1">Lamb Gyro
+							<serving_size portion='3 oz Serving'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="14 gm" f="7 gm" fc="62" cr="6 gm" cl="142 " so="364 mg" ch="0 mg" fs="2 gm" fi="1 gm" su="2 gm" ft="0 gm" pro="18" fat="10" cho="2" sfa="10" tdfb="4" vitc="5" ca="3" fe="8" vtaiu="0" chol="0" fatrn="0" sugar="5" na="24"></nutrition></menuitem>
+					<menuitem glutenfree="1" halal="1">Beef Kofta
+							<serving_size portion='3 oz Serving'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="10 gm" f="11 gm" fc="101" cr="2 gm" cl="151 " so="302 mg" ch="39 mg" fs="5 gm" fi="1 gm" su="1 gm" ft="1 gm" pro="13" fat="17" cho="1" sfa="20" tdfb="2" vitc="7" ca="2" fe="7" vtaiu="11" chol="13" fatrn="3" sugar="1" na="20"></nutrition></menuitem>
+					<menuitem vegan="1">Falafel Sandwich  
+							<serving_size portion='Sandwich'></serving_size>
+							<portion_size grams='85'></portion_size>
+							<nutrition p="6 gm" f="9 gm" fc="80" cr="22 gm" cl="185 " so="438 mg" ch="0 mg" fs="1 gm" fi="5 gm" su="0 gm" ft="0 gm" pro="8" fat="13" cho="8" sfa="6" tdfb="19" vitc="5" ca="10" fe="15" vtaiu="8" chol="0" fatrn="0" sugar="0" na="29"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name></name>
+				<course>
+					<name>Salads</name>
+					<menuitem glutenfree="1" vegetarian="1">Redskin Potato Salad 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="2 gm" f="6 gm" fc="58" cr="20 gm" cl="145 " so="432 mg" ch="5 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="3" fat="10" cho="7" sfa="4" tdfb="6" vitc="21" ca="2" fe="4" vtaiu="3" chol="2" fatrn="0" sugar="5" na="29"></nutrition></menuitem>
+					<menuitem msmart="1">Panzanella Salad w/ Bacon
+							<serving_size portion='Salad'></serving_size>
+							<portion_size grams='233'></portion_size>
+							<nutrition p="4 gm" f="9 gm" fc="81" cr="17 gm" cl="164 " so="159 mg" ch="3 mg" fs="1 gm" fi="2 gm" su="5 gm" ft="0 gm" pro="5" fat="14" cho="6" sfa="6" tdfb="10" vitc="27" ca="6" fe="2" vtaiu="35" chol="1" fatrn="0" sugar="10" na="11"></nutrition></menuitem>
+				</course>
+				<course>
+					<name>WorldHarvestTitle</name>
+					<menuitem>INDIAN
+							<serving_size portion='TITLE'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition></nutrition></menuitem>
+				</course>
+				<course>
+					<name>WorldHarvest</name>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Cauliflower 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="2 gm" f="1 gm" fc="4" cr="4 gm" cl="25 " so="16 mg" ch="0 mg" fs="0 gm" fi="3 gm" su="2 gm" pro="3" fat="1" cho="2" sfa="0" tdfb="10" vitc="79" ca="2" fe="2" vtaiu="0" chol="0" fatrn="" sugar="4" na="1"></nutrition></menuitem>
+					<menuitem vegetarian="1" msmart="1">Vegetable Cashew Koorma 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="3 gm" f="5 gm" fc="45" cr="11 gm" cl="97 " so="349 mg" ch="0 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="4" fat="8" cho="4" sfa="3" tdfb="9" vitc="17" ca="5" fe="5" vtaiu="53" chol="0" fatrn="0" sugar="7" na="23"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegetarian="1" msmart="1">Egg Curry 
+							<serving_size portion='5 oz Piece'></serving_size>
+							<portion_size grams='128'></portion_size>
+							<nutrition p="6 gm" f="5 gm" fc="43" cr="8 gm" cl="96 " so="369 mg" ch="175 mg" fs="1 gm" fi="2 gm" su="3 gm" ft="0 gm" pro="9" fat="7" cho="3" sfa="6" tdfb="7" vitc="12" ca="3" fe="8" vtaiu="17" chol="58" fatrn="0" sugar="6" na="25"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Pea Pods 
+							<serving_size portion='1/4 Cup'></serving_size>
+							<portion_size grams='57'></portion_size>
+							<nutrition p="2 gm" f="0 gm" fc="1" cr="4 gm" cl="23 " so="2 mg" ch="0 mg" fs="0 gm" fi="1 gm" su="2 gm" pro="2" fat="0" cho="2" sfa="0" tdfb="6" vitc="56" ca="2" fe="6" vtaiu="12" chol="0" fatrn="" sugar="4" na="0"></nutrition></menuitem>
+					<menuitem glutenfree="1" vegan="1" msmart="1">Basmati Rice 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='113'></portion_size>
+							<nutrition p="4 gm" f="0 gm" fc="0" cr="34 gm" cl="156 " so="42 mg" ch="0 mg" fs="0 gm" fi="0 gm" su="0 gm" ft="0 gm" pro="5" fat="0" cho="12" sfa="0" tdfb="0" vitc="0" ca="0" fe="0" vtaiu="0" chol="0" fatrn="0" sugar="0" na="3"></nutrition></menuitem>
+				</course>
+			</station>
+			<station>
+				<name>Dessert</name>
+				<course>
+					<name>Desserts</name>
+					<menuitem>Strawberry Shortcake
+							<serving_size portion='TITLE'></serving_size>
+							<portion_size grams='28'></portion_size>
+							<nutrition></nutrition></menuitem>
+					<menuitem vegetarian="1">Ice Cream Sundae Bar 
+							<serving_size portion='1/2 Cup'></serving_size>
+							<portion_size grams='136'></portion_size>
+							<nutrition p="6 gm" f="12 gm" fc="106" cr="45 gm" cl="309 " so="133 mg" ch="23 mg" fs="5 gm" fi="1 gm" su="39 gm" ft="1 gm" pro="8" fat="18" cho="16" sfa="24" tdfb="4" vitc="3" ca="14" fe="2" vtaiu="8" chol="8" fatrn="2" sugar="77" na="9"></nutrition></menuitem>
+				</course>
+			</station>
+		</meal>
+	</menu>
+</dininghall>
