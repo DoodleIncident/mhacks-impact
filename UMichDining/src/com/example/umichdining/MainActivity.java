@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -41,9 +43,14 @@ public class MainActivity extends Activity {
 		{
 			String website = menuXml + bar[i] + "&date=today";
 			Log.v("onCreate", website);
+			
+			Toast toast = Toast.makeText(getApplicationContext(), website, Toast.LENGTH_SHORT);
+			toast.show();
 	        
 	        GetXml files = new GetXml();
 	        files.context = getApplicationContext();
+	        TextView hello = (TextView) findViewById(R.id.hello_textbox);
+	        files.helloText = hello;
 	        files.execute(website);
 		}
 		

@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -19,12 +20,15 @@ import com.mhacks.xmldata.DiningHallXmlParser;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class GetXml extends AsyncTask {
-	private HttpEntity entity;
+	private DiningHall hall;
 	
 	public Context context;
+	
+	public TextView helloText;
 	
 	public enum halls { barbour, east, north, south, west, markley, marketplace, twigs, bursley }
 	
@@ -42,7 +46,7 @@ public class GetXml extends AsyncTask {
 			HttpEntity entity = response.getEntity();
 	    	if (entity != null) {
 	    			Log.i("GET RESPONSE", "Got something!");
-	    			Log.i("xml_data", ((DiningHall) new DiningHallXmlParser().parse(entity.getContent())).name);
+	    			hall = ((DiningHall) new DiningHallXmlParser().parse(entity.getContent()));
 	    			
 	    	}
 		} catch (ClientProtocolException e) {
@@ -62,35 +66,22 @@ public class GetXml extends AsyncTask {
 		return response;
 	}
 	
-	protected DiningHall onPostExecute(HttpResponse response) {
-		entity = response.getEntity();
+	
+	
+	@Override
+	protected void onPostExecute(Object result) {
 		try {
-			Log.i("xml_data", ((DiningHall) new DiningHallXmlParser().parse(entity.getContent())).name);
-			Toast toast = Toast.makeText(context, ((DiningHall) new DiningHallXmlParser().parse(entity.getContent())).name, Toast.LENGTH_SHORT);
+			Log.i("xml_data", hall.name);
+			Toast toast = Toast.makeText(context, hall.name, Toast.LENGTH_SHORT);
 			toast.show();
+			helloText.setText(hall.name);
+			Log.d("toast", "Post-tost");
 		} catch (IllegalStateException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-//		try {
-//			Toast.makeText(context, ((DiningHall) new DiningHallXmlParser().parse(entity.getContent())).name, Toast.LENGTH_SHORT).show();
-//		} catch (IllegalStateException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (XmlPullParserException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-		return null;
+		
+		return;
 		
 	}
 }
