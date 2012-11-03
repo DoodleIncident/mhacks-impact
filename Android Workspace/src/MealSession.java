@@ -3,7 +3,12 @@
 
 public class MealSession 
 {
+	enum Session {BREAKFAST, LUNCH, DINNER};
+	
 	Meal[] availableMeals;
-	int time;
+	Session session;
+	short hours;
+	short minutes;
+	char meridian;
 	
 }
