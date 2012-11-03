@@ -31,7 +31,7 @@ public class Meal
 	boolean msmart;
 	boolean glutenfree;
 	
-	// Crap code to test git
+	// Testing git, this is crap code
 	private Entry readEntry(XmlPullParser parser) throws XmlPullParserException, IOException {
 	    parser.require(XmlPullParser.START_TAG, ns, "entry");
 	    String title = null;
